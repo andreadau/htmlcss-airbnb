@@ -7,14 +7,7 @@
 .container {
   height: 100vh;
   width: 100vw;
-}
-
-.roma {
-  width: 100%;
-  height: 100%;
-  background-image: url("../img/roma.jpg");
-  background-size: cover;
-  padding: 20px;
+  border: 20px solid white;
 }
 
 .amsterdam {
@@ -22,13 +15,40 @@
   height: 100%;
   background-image: url("../img/amsterdam.jpg");
   background-size: cover;
-  padding: 20px;
+  position: relative;
 }
+
+.roma {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/roma.jpg");
+  background-size: cover;
+  position: relative;
+}
+
 
 .oslo {
   width: 100%;
   height: 100%;
   background-image: url("../img/oslo.jpg");
   background-size: cover;
-  padding: 20px;
+  position: relative;
+}
+
+.overlay {
+  width: 20%;
+  height: 20%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
